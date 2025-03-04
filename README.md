@@ -6,10 +6,14 @@ In order to run the scripts:
 1- Clone the repository [here](https://github.com/DepthAnything/Depth-Anything-V2) and create environment / install requirements as described there.  
 2- Download the respective metric depth models and put them under ./metric_depth/checkpoints
 3- Put the scripts under ./metric_depth folder.
-4- Change the environment name in .sh files to the one you set (If you went with the suggested name Unidepth, this step is not required).  
-5- Run the respective script using:  
+4- Change the environment name in .sh files to the one you set (If you did not create a conda environment, skip this step).  
+5- If you created a conda environment for this project, run:  
 ```bash
 bash kitti_test.sh
+```
+If you did not create a conda environment for the project, then run:
+```bash
+python nyu_test.py  --encoder vitl   --load-from checkpoints/depth_anything_v2_metric_hypersim_vitl.pth   --max-depth 20  --input-size 518 
 ```
 
 It worths noting that the .sh script gives the model some priori information, such as max_depth, and which model to use... There are two suggested models, that are Hypersim (for indoor with suggested max_depth=20) and VKITTI (for outdoor with suggested max_depth=80). For this very test project, script variables are as follows:    
