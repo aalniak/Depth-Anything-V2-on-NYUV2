@@ -14,9 +14,7 @@ bash kitti_test.sh
 
 It worths noting that the .sh script gives the model some priori information, such as max_depth, and which model to use... There are two suggested models, that are Hypersim (for indoor with suggested max_depth=20) and VKITTI (for outdoor with suggested max_depth=80). For this very test project, script variables are as follows:    
 input_size = 518,  
-
 model=Fine-tuned on Hypersim,    
-
 max_depth=20     
 
 
