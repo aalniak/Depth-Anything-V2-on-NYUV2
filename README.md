@@ -1,7 +1,7 @@
 # Depth-Anything-V2-on-NYUV2
 This repository contains a Python script built on top of [DepthAnythingV2](https://github.com/DepthAnything/Depth-Anything-V2).
 
-Running this repository requires a correctly set-up Unidepth environment.
+Running this repository requires a correctly set-up Depth-Anything-V2 environment.
 In order to run the scripts:   
 1- Clone the repository [here](https://github.com/DepthAnything/Depth-Anything-V2) and create environment / install requirements as described there.  
 2- Download the respective metric depth models and put them under ./metric_depth/checkpoints
