@@ -4,7 +4,7 @@ This repository contains a Python script built on top of [DepthAnythingV2](https
 Running this repository requires a correctly set-up Depth-Anything-V2 environment.
 In order to run the scripts:   
 1- Clone the repository [here](https://github.com/DepthAnything/Depth-Anything-V2) and create environment / install requirements as described there.  
-2- Download the respective metric depth models and put them under ./metric_depth/checkpoints
+2- Download the respective metric depth models and put them under ./metric_depth/checkpoints    
 3- Put the scripts under ./metric_depth folder.
 4- Change the environment name in .sh files to the one you set (If you did not create a conda environment, skip this step).  
 5- If you created a conda environment for this project, run:  
